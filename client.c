@@ -14,7 +14,7 @@ void send_file(FILE *fp, int sockfd)
     {
         if(send(sockfd, data, sizeof(data), 0)== -1)
         {
-            perror("[-] Error in sendung data");
+            perror("[-] Error in sending data");
             exit(1);
         }
         bzero(data, SIZE);
