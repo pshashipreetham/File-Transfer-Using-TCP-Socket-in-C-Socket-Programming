@@ -7,7 +7,7 @@
 
 void write_file(int sockfd)
 {
-    int n; 
+    int n;
     FILE *fp;
     char *filename = "file2.txt";
     char buffer[SIZE];
@@ -30,7 +30,7 @@ void write_file(int sockfd)
         bzero(buffer, SIZE);
     }
     return;
-    
+
 }
 
 int main ()
@@ -62,14 +62,14 @@ int main ()
          perror("[-]Error in Binding");
          exit(1);
      }
-     printf("[+]Binding Successfull.\n");
+     printf("[+]Binding Successful.\n");
 
      e = listen(sockfd, 10);
      if(e==0)
      {
          printf("[+]Listening...\n");
      }
-     else 
+     else
      {
          perror("[-]Error in Binding");
          exit(1);
